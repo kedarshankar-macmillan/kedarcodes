@@ -1,0 +1,10 @@
+----------------------------------------------------------------------------------------------------
+select count(*) from transaction.vendor_vst_wholesale where report_date='2020-06-01';
+delete from transaction.vendor_vst_wholesale where report_date='2020-06-01';
+delete from staging.ia_vendor_wholesale_pricing_commission_match where report_date='2020-06-01';
+delete from staging.ia_vendor_wholesale_pricing_commission_match_ses where report_date='2020-06-01';
+--------------------------------------------------------------------------------------------------------
+select count(*) from transaction.vendor_redshelf where report_date='2020-06-01';
+delete from transaction.vendor_redshelf where report_date='2020-06-01';
+delete from staging.ia_redshelf_pricing_commission_match where report_date='2020-06-01';
+delete from staging.ia_redshelf_pricing_commission_match_ses where report_date='2020-06-01';
